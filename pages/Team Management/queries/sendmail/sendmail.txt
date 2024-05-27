@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>Invitation to EOS on Parati</title>
+<style>
+/* Set the email font family and size */
+body {
+	font-family: sans-serif;
+	font-size: 16px;
+	background-color: #002b41ff;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Style the email header */
+h1 {
+	font-size: 24px;
+	margin-top: 0;
+}
+
+/* Style the email body text */
+p {
+	margin-bottom: 10px;
+}
+
+/* Style the email buttons */
+.button {
+	background-color: #eab308;
+	color: white;
+	padding: 10px 20px;
+	border-radius: 10px;
+	border-color: blue;
+	text-decoration: none;
+	cursor: pointer;
+}
+</style>
+</head>
+<body>
+<h3>Hi {{OKR_ListCopy.triggeredItem.emp_name}}&nbsp;</h3>&nbsp;  
+<p>
+{{appsmith.store.company}} has invited you to join their EOS on Parati.
+/n
+Using this application you can track and monitor your KPIs.
+</p>
+<a href="https://pentaverses.in/app/eos-goals/login-64e89dd6ddfe8523fcdbdc1f" class="button" onclick="window.location.replace('https://pentaverses.in/app/eos-goals/login-64e89dd6ddfe8523fcdbdc1f?embed=true')">JOIN</a>
+</p>
+
+<br>
+<p>
+Best wishes,
+Parati
+</p>
+</body>
+</html>

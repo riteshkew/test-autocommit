@@ -1,0 +1,10 @@
+{
+  "accessor": [
+    "Email"
+  ],
+  "defs": "{\"!name\":\"LIB/Email\",\"Email\":{\"send\":{\"!type\":\"fn()\",\"prototype\":{}},\"ajaxPost\":{\"!type\":\"fn()\",\"prototype\":{}},\"ajax\":{\"!type\":\"fn()\",\"prototype\":{}},\"createCORSRequest\":{\"!type\":\"fn()\",\"prototype\":{}}}}",
+  "name": "Email",
+  "url": " https://smtpjs.com/v3/smtp.js",
+  "version": "",
+  "uidString": "Email_ https://smtpjs.com/v3/smtp.js"
+}

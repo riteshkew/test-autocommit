@@ -1,0 +1,4 @@
+SELECT * FROM Employee1 
+WHERE Teams_id = {{fetchTeam.data.find(team => team.team_name === Table1.triggeredRow.team_id)?.team_id}};
+
+

@@ -1,0 +1,1 @@
+INSERT INTO public.company_objective1 (name,comp_id) VALUES ({{Inp_Obj_name.text}},{{appsmith.store.company}});

@@ -1,0 +1,1 @@
+SELECT * FROM Employee1 WHERE comp_id = {{appsmith.store.company}} ORDER BY Emp_id;

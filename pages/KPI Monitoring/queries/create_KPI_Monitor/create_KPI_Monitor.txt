@@ -1,0 +1,27 @@
+INSERT INTO public.KPI_Monitor (
+  KPI_ID,
+  KPI_Name,
+  Emp_id,
+  Year,
+  Quarter,
+  Start_Value,
+  Overall_Target,
+  Overall_Actual,
+  Progress,
+  OnTrack
+) VALUES (
+  {{Select_KPI.selectedOptionValue}},
+  {{Select_KPI.selectedOptionLabel}},
+  (
+  SELECT emp_id
+  FROM public.kpi
+  WHERE kpi_id ={{Select_KPI.selectedOptionValue}}
+),
+  {{Input_Year.selectedOptionValue}},
+  {{Quarter_Inp.selectedOptionValue}},
+  {{Inp_Start_Value.text}},
+  {{Input_Overall_target.text}},
+  NULL,
+  NULL,
+  NULL
+);

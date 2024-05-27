@@ -1,0 +1,3 @@
+SELECT * FROM company_objective1  
+where comp_id = {{appsmith.store.company}} 
+ORDER BY id;

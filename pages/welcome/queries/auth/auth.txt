@@ -1,0 +1,1 @@
+SELECT CASE WHEN EXISTS (SELECT * FROM employee1 WHERE email={{appsmith.store.user.email}}) THEN true ELSE false END;

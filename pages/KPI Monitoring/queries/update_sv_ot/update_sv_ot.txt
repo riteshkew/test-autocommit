@@ -1,0 +1,4 @@
+UPDATE public.kpi_monitor
+SET start_value = {{Table1.triggeredRow.start_value}}, 
+overall_target = {{Table1.triggeredRow.overall_target}}
+WHERE kpi_id = {{Table1.triggeredRow.kpi_id}};

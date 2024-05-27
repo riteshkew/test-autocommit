@@ -1,0 +1,13 @@
+INSERT INTO public.employee1 (Emp_Name, Emp_id,Teams_id,emp_role,comp_id,email,status)
+VALUES (
+	'{{Inp_Emp_Name.text}}',
+	'{{Inp_Emp_id.text}}', 
+	{{Inp_team.selectedOptionValue}},
+	{{emp_role.selectedOptionValue}},
+	{{appsmith.store.company}},
+	{{Input_Email.text}},
+	'invite'
+
+);
+
+

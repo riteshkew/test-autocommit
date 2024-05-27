@@ -1,0 +1,19 @@
+SELECT DISTINCT
+		kpi.KPI_obj_id,
+		kpi.kpi_kr_id,
+		kwt.ontrack,
+    kwt.KPI_ID,
+    kwt.Emp_ID,
+		kpi.team_id,
+    kwt.Weeks,
+		CAST(SUBSTRING(kwt.Weeks, 6) AS INTEGER) AS WeekNumber
+FROM
+    public.kpi_week_task AS kwt
+		INNER JOIN public.KPI AS kpi ON kwt.KPI_ID = kpi.KPI_id
+    INNER JOIN public.kpi_monitor AS km ON kwt.KPI_ID = km.KPI_id
+ where kpi.comp_id = {{appsmith.store.company}}
+ORDER BY
+    WeekNumber;
+
+
+

@@ -1,0 +1,21 @@
+UPDATE kpi_week_task AS kwt
+SET Week_Target = 
+	CASE
+	WHEN {{Table1.selectedRow.kpi_type}} = 'CUMULATIVE' THEN (
+		SELECT km.Overall_Actual / 13
+		FROM public.kpi_monitor AS km
+		WHERE kwt.kpi_id = {{Table1.selectedRow.kpi_id}}
+	)
+	WHEN {{Table1.selectedRow.kpi_type}} = 'AVERAGE' THEN (
+		SELECT km.Overall_Actual
+		FROM public.kpi_monitor AS km
+		WHERE kwt.kpi_id = {{Table1.selectedRow.kpi_id}}
+
+	)
+	WHEN {{Table1.selectedRow.kpi_type}} = 'SNAPSHOT' THEN (
+		{{Table2.triggeredRow.week_actual}}
+	)
+	ELSE NULL
+	END
+
+WHERE kwt.KPI_id = {{Table1.selectedRow.kpi_id}};

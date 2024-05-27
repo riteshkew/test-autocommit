@@ -1,0 +1,3 @@
+SELECT * FROM Employee1 WHERE Teams_id = "{{Inp_Sel_Team.selectedOptionValue}}";
+
+

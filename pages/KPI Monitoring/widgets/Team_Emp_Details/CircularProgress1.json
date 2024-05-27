@@ -1,0 +1,38 @@
+{
+  "animateLoading": true,
+  "borderRadius": "0px",
+  "bottomRow": 45,
+  "boxShadow": "none",
+  "counterClockWise": false,
+  "displayName": "Circular Progress",
+  "dynamicBindingPathList": [
+    {
+      "key": "progress"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "fillColor": "#002b41ff",
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.37671330.svg",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "1ldz856yqt",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 48,
+  "originalBottomRow": 45,
+  "originalTopRow": 30,
+  "parentColumnSpace": 17.9375,
+  "parentId": "iaoes65e9m",
+  "parentRowSpace": 10,
+  "progress": "{{Math.abs(Table1.selectedRow.progress)}}",
+  "renderMode": "CANVAS",
+  "rightColumn": 63,
+  "shouldScroll": false,
+  "shouldTruncate": false,
+  "showResult": true,
+  "topRow": 30,
+  "type": "CIRCULAR_PROGRESS_WIDGET",
+  "version": 1,
+  "widgetId": "epe3o4psiv",
+  "widgetName": "CircularProgress1"
+}

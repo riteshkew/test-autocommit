@@ -1,0 +1,12 @@
+SELECT COALESCE((
+    SELECT Week_Actual
+    FROM (
+      SELECT Week_Actual, ROW_NUMBER() OVER (ORDER BY Weeks DESC) AS WeekNumber
+      FROM KPI_Week_Task
+      WHERE Weeks <= 'Week 13' AND Week_Actual IS NOT NULL
+    ) AS subquery
+    WHERE WeekNumber = 1
+  ), 0) AS Last_Week_Actual,
+  SUM(Week_Target) AS Total_Week_Target
+FROM KPI_Week_Task
+WHERE Weeks <= 'Week 13';

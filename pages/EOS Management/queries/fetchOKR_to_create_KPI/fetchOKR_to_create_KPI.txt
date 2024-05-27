@@ -1,0 +1,1 @@
+SELECT * FROM OKR WHERE Obj_Id ={{Input_Str_Obj.selectedOptionValue}};

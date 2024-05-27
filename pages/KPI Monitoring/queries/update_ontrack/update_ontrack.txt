@@ -1,0 +1,25 @@
+UPDATE KPI_Week_Task
+SET OnTrack = (SELECT
+							 CASE
+							 WHEN kpi.KPI_type = 'CUMULATIVE' THEN (
+								 SELECT SUM(Week_Actual)*100/((km.Overall_Target/13)*COUNT(Week_Actual))
+								 FROM public.kpi_week_task
+								 WHERE Week_Actual IS NOT NULL  AND KPI_ID = km.kpi_id)
+							 WHEN kpi.KPI_type = 'AVERAGE' THEN (
+								 SELECT SUM(Week_Actual)*100/(km.Overall_Target*COUNT(Week_Actual))
+								 FROM public.kpi_week_task
+								 WHERE Week_Actual IS NOT NULL AND KPI_ID = km.kpi_id)
+							 WHEN kpi.KPI_type = 'SNAPSHOT' THEN  (
+								 SELECT 
+								 SUM(Week_Actual)*100/((COUNT(Week_Actual)*(COUNT(Week_Actual)+1)/2)*km.Overall_Target-((COUNT(Week_Actual)*(COUNT(Week_Actual)-1)/2)*km.start_value))
+								 FROM public.kpi_week_task
+								 WHERE Week_Actual IS NOT NULL AND KPI_ID = km.kpi_id)
+							 ELSE NULL
+							 END AS OnTrack		
+							 FROM
+							 public.KPI_Monitor AS km
+							 INNER JOIN public.KPI AS kpi ON km.KPI_ID = kpi.KPI_id
+							 INNER JOIN public.Company_Objective1 AS co1 ON kpi.KPI_Obj_Id = co1.id
+							 WHERE km.kpi_id = {{Table2.triggeredRow.kpi_id}} 
+							)
+WHERE KPI_ID = {{Table2.triggeredRow.kpi_id}} AND Weeks = {{Table2.triggeredRow.weeks}}

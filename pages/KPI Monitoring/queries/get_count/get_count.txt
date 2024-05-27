@@ -1,0 +1,4 @@
+SELECT(COUNT(Week_Actual)*(COUNT(Week_Actual)+1)/2)*km.Overall_Target-((COUNT(Week_Actual)*(COUNT(Week_Actual)-1)/2)*km.start_value)
+				FROM public.kpi_week_task
+				WHERE Week_Actual IS NOT NULL AND KPI_ID = {{Table1.selectedRow.kpi_id}}
+

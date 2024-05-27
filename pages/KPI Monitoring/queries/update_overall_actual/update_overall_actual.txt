@@ -1,0 +1,22 @@
+UPDATE KPI_Monitor AS km
+SET Overall_Actual = (
+	CASE
+	WHEN  {{Table1.selectedRow.kpi_type}} = 'CUMULATIVE' THEN (
+		SELECT SUM(kwt.Week_Actual) + km.Start_Value
+		FROM public.kpi_week_task AS kwt
+		WHERE kwt.KPI_ID = km.KPI_id
+	)
+	WHEN  {{Table1.selectedRow.kpi_type}} = 'AVERAGE' THEN (
+		SELECT SUM(kwt.Week_Actual) / COUNT(kwt.Week_Actual)
+		FROM public.kpi_week_task AS kwt
+		WHERE kwt.KPI_ID = km.KPI_id AND kwt.Week_Actual IS NOT NULL
+	)
+	WHEN  {{Table1.selectedRow.kpi_type}} = 'SNAPSHOT' THEN (
+				{{utils.fun()}}
+	)
+	ELSE NULL
+	END
+)
+WHERE km.Emp_id = {{Table1.selectedRow.emp_id}} 
+AND km.KPI_id = {{Table1.selectedRow.kpi_id}};
+

@@ -1,0 +1,1 @@
+SELECT comp_id from employee1 where email = {{appsmith.store.user.email}}

@@ -1,0 +1,36 @@
+SELECT
+    kpi.KPI_type,
+    kpi.KPI_id,
+    okr.Key_Result,
+    co1.name AS Objective,
+		km.overall_actual,
+		km.KPI_Name,
+		km.Emp_id,
+		kpi.Team_id,
+		km.Start_Value, 
+	CASE
+        WHEN kpi.KPI_type = 'CUMULATIVE' THEN (
+					SELECT SUM(Week_Actual)*100/((km.Overall_Target/13)*COUNT(Week_Actual))
+					FROM public.kpi_week_task
+					WHERE Week_Actual IS NOT NULL  AND KPI_ID = km.kpi_id)
+        WHEN kpi.KPI_type = 'AVERAGE' THEN (
+					SELECT SUM(Week_Actual)*100/(km.Overall_Target*COUNT(Week_Actual))
+					FROM public.kpi_week_task
+					WHERE Week_Actual IS NOT NULL AND KPI_ID = km.kpi_id)
+        WHEN kpi.KPI_type = 'SNAPSHOT' THEN  (
+					SELECT 
+					SUM(Week_Actual)*100/((COUNT(Week_Actual)*(COUNT(Week_Actual)+1)/2)*km.Overall_Target-((COUNT(Week_Actual)*(COUNT(Week_Actual)-1)/2)*km.start_value))
+					FROM public.kpi_week_task
+					WHERE Week_Actual IS NOT NULL AND KPI_ID = km.kpi_id)
+        ELSE NULL
+    END AS OnTrack,
+		(km.Overall_actual-km.start_value)*100/(km.Overall_Target-km.start_value) AS Progress 
+		, km.Overall_Target,
+		km.Year, km.Quarter AS Quarter
+FROM
+    public.KPI_Monitor AS km
+    INNER JOIN public.KPI AS kpi ON km.KPI_ID = kpi.KPI_id
+    INNER JOIN public.OKR AS okr ON kpi.KPI_KR_ID = okr.KR_ID AND kpi.KPI_Obj_Id = okr.Obj_Id
+    INNER JOIN public.Company_Objective1 AS co1 ON kpi.KPI_Obj_Id = co1.id
+		
+ where km.comp_id = {{appsmith.store.company}}

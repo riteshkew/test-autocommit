@@ -1,0 +1,539 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderColor": "#E0DEDE",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "1",
+  "bottomRow": 71,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "canFreezeColumn": true,
+  "childStylesheet": {
+    "button": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    },
+    "editActions": {
+      "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "saveBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "saveButtonColor": "{{appsmith.theme.colors.primaryColor}}"
+    },
+    "iconButton": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    },
+    "menuButton": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "menuColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "columnOrder": [
+    "kpi",
+    "kpi_type",
+    "team_id",
+    "emp_id",
+    "kpi_id",
+    "kpi_kr_id",
+    "kpi_obj_id",
+    "EditActions1",
+    "customColumn1",
+    "comp_id"
+  ],
+  "columnUpdatedAt": 1694612044808,
+  "columnWidthMap": {},
+  "defaultPageSize": 0,
+  "defaultSelectedRowIndex": "0",
+  "defaultSelectedRowIndices": [
+    0
+  ],
+  "delimiter": ",",
+  "displayName": "Table",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "primaryColumns.EditActions1.saveButtonColor"
+    },
+    {
+      "key": "primaryColumns.EditActions1.saveBorderRadius"
+    },
+    {
+      "key": "primaryColumns.EditActions1.discardBorderRadius"
+    },
+    {
+      "key": "primaryColumns.customColumn1.buttonColor"
+    },
+    {
+      "key": "primaryColumns.customColumn1.borderRadius"
+    },
+    {
+      "key": "primaryColumns.customColumn1.boxShadow"
+    },
+    {
+      "key": "primaryColumns.kpi_type.computedValue"
+    },
+    {
+      "key": "primaryColumns.kpi.computedValue"
+    },
+    {
+      "key": "primaryColumns.emp_id.computedValue"
+    },
+    {
+      "key": "primaryColumns.kpi_id.computedValue"
+    },
+    {
+      "key": "primaryColumns.kpi_kr_id.computedValue"
+    },
+    {
+      "key": "primaryColumns.kpi_obj_id.computedValue"
+    },
+    {
+      "key": "primaryColumns.team_id.computedValue"
+    },
+    {
+      "key": "primaryColumns.team_id.selectOptions"
+    },
+    {
+      "key": "primaryColumns.emp_id.selectOptions"
+    },
+    {
+      "key": "tableData"
+    },
+    {
+      "key": "primaryColumns.comp_id.computedValue"
+    },
+    {
+      "key": "primaryColumns.kpi_type.isCellEditable"
+    },
+    {
+      "key": "primaryColumns.team_id.isCellEditable"
+    },
+    {
+      "key": "primaryColumns.emp_id.isCellEditable"
+    },
+    {
+      "key": "primaryColumns.customColumn1.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.EditActions1.isDiscardVisible"
+    },
+    {
+      "key": "primaryColumns.EditActions1.isSaveVisible"
+    },
+    {
+      "key": "primaryColumns.kpi.isCellEditable"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "tableData"
+    },
+    {
+      "key": "primaryColumns.kpi.isCellEditable"
+    },
+    {
+      "key": "primaryColumns.kpi_type.isCellEditable"
+    },
+    {
+      "key": "primaryColumns.team_id.isCellEditable"
+    },
+    {
+      "key": "primaryColumns.emp_id.isCellEditable"
+    },
+    {
+      "key": "primaryColumns.customColumn1.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.EditActions1.isDiscardVisible"
+    },
+    {
+      "key": "primaryColumns.EditActions1.isSaveVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "primaryColumns.EditActions1.onSave"
+    },
+    {
+      "key": "primaryColumns.customColumn1.onClick"
+    },
+    {
+      "key": "primaryColumns.team_id.onOptionChange"
+    }
+  ],
+  "enableClientSideSearch": true,
+  "enableServerSideFiltering": false,
+  "hideCard": false,
+  "horizontalAlignment": "LEFT",
+  "iconSVG": "https://appcdn.appsmith.com/static/media/icon.24905525921dd6f5ff46d0dd843b9e12.svg",
+  "inlineEditingSaveOption": "ROW_LEVEL",
+  "isDeprecated": false,
+  "isLoading": false,
+  "isSortable": true,
+  "isVisible": true,
+  "isVisibleDownload": true,
+  "isVisibleFilters": true,
+  "isVisiblePagination": true,
+  "isVisibleSearch": true,
+  "key": "cny0y5ifab",
+  "label": "Data",
+  "leftColumn": 0,
+  "minWidth": 450,
+  "mobileBottomRow": 43,
+  "mobileLeftColumn": 15,
+  "mobileRightColumn": 49,
+  "mobileTopRow": 15,
+  "needsHeightForContent": true,
+  "originalBottomRow": 68,
+  "originalTopRow": 11,
+  "parentColumnSpace": 6.36962890625,
+  "parentId": "xo8bm78brq",
+  "parentRowSpace": 10,
+  "primaryColumnId": "Type",
+  "primaryColumns": {
+    "EditActions1": {
+      "alias": "EditActions1",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "buttonStyle": "rgb(3, 179, 101)",
+      "columnType": "editActions",
+      "computedValue": "",
+      "discardActionLabel": "Discard",
+      "discardBorderRadius": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
+      "discardButtonColor": "#F22B2B",
+      "discardButtonVariant": "TERTIARY",
+      "discardIconAlign": "left",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "EditActions1",
+      "index": 8,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": true,
+      "isDisabled": false,
+      "isDiscardDisabled": false,
+      "isDiscardVisible": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( fetch_emp_by_level.data[0].lvl_id>3))}}",
+      "isEditable": false,
+      "isSaveDisabled": false,
+      "isSaveVisible": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( fetch_emp_by_level.data[0].emp_role!=='admin'?fetch_emp_by_level.data[0].lvl_id>3?currentRow[\"team_id\"]===fetch_emp_by_level.data[0].teams_id:false:true))}}",
+      "isVisible": true,
+      "label": "Save / Discard",
+      "onSave": "{{patchKPI.run().then(() => {\n  fetchKPI.run();\n}).catch(() => {\n  fetchKPI.run();\n});}}",
+      "originalId": "EditActions1",
+      "saveActionLabel": "Save",
+      "saveBorderRadius": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
+      "saveButtonColor": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
+      "saveIconAlign": "left",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "comp_id": {
+      "alias": "comp_id",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"comp_id\"]))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "comp_id",
+      "index": 7,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "comp_id",
+      "originalId": "comp_id",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "customColumn1": {
+      "alias": "Delete",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "borderRadius": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
+      "boxShadow": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
+      "buttonColor": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
+      "buttonStyle": "rgb(3, 179, 101)",
+      "columnType": "iconButton",
+      "computedValue": "",
+      "customAlias": "",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "iconName": "trash",
+      "id": "customColumn1",
+      "index": 9,
+      "isCellEditable": false,
+      "isCellVisible": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( fetch_emp_by_level.data[0].emp_role!=='admin'?fetch_emp_by_level.data[0].lvl_id>3?currentRow[\"team_id\"]===fetch_emp_by_level.data[0].teams_id:false:true))}}",
+      "isDerived": true,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Delete",
+      "labelColor": "#FFFFFF",
+      "onClick": "{{delete_kpi.run();\nfetchkpiall.run()}}",
+      "originalId": "customColumn1",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "emp_id": {
+      "alias": "emp_id",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "select",
+      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( fetchEmployee.data.find(emp => emp.emp_id === currentRow.emp_id)?.emp_name))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "emp_id",
+      "index": 3,
+      "isCellEditable": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( fetch_emp_by_level.data[0].emp_role!=='admin'?fetch_emp_by_level.data[0].lvl_id>3?currentRow[\"team_id\"]===fetch_emp_by_level.data[0].teams_id:false:true))}}",
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": true,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Employee",
+      "originalId": "emp_id",
+      "selectOptions": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( Get_Emp_By_TeamValue_2.data.map(c => {\n\treturn {\n\t\tlabel: c.emp_name,\n\t\tvalue: c.emp_id\n\t}\n})\n))}}",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "kpi": {
+      "alias": "kpi",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"kpi\"]))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "kpi",
+      "index": 1,
+      "isCellEditable": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( fetch_emp_by_level.data[0].emp_role!=='admin'?fetch_emp_by_level.data[0].lvl_id>3?currentRow[\"team_id\"]===fetch_emp_by_level.data[0].teams_id:false:true))}}",
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": true,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "KPI",
+      "originalId": "kpi",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "kpi_id": {
+      "alias": "kpi_id",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"kpi_id\"]))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "kpi_id",
+      "index": 4,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": false,
+      "label": "kpi_id",
+      "originalId": "kpi_id",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "kpi_kr_id": {
+      "alias": "kpi_kr_id",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"kpi_kr_id\"]))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "kpi_kr_id",
+      "index": 5,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": false,
+      "label": "kpi_kr_id",
+      "originalId": "kpi_kr_id",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "kpi_obj_id": {
+      "alias": "kpi_obj_id",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"kpi_obj_id\"]))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "kpi_obj_id",
+      "index": 6,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": false,
+      "label": "kpi_obj_id",
+      "originalId": "kpi_obj_id",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "kpi_type": {
+      "alias": "kpi_type",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "select",
+      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"kpi_type\"]))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "kpi_type",
+      "index": 0,
+      "isCellEditable": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( fetch_emp_by_level.data[0].emp_role!=='admin'?fetch_emp_by_level.data[0].lvl_id>3?currentRow[\"team_id\"]===fetch_emp_by_level.data[0].teams_id:false:true))}}",
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": true,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "KPI Type",
+      "originalId": "kpi_type",
+      "selectOptions": "[\n  {\n    \"label\": \"Cumulative\",\n    \"value\": \"CUMULATIVE\"\n  },\n  {\n    \"label\": \"Average\",\n    \"value\": \"AVERAGE\"\n  },\n  {\n    \"label\": \"Snapshot\",\n    \"value\": \"SNAPSHOT\"\n  }\n]",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "team_id": {
+      "alias": "team_id",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "select",
+      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( fetchTeam.data.find(team => team.team_id === currentRow.team_id)?.team_name))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "team_id",
+      "index": 2,
+      "isCellEditable": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( fetch_emp_by_level.data[0].emp_role!=='admin'?fetch_emp_by_level.data[0].lvl_id>3?currentRow[\"team_id\"]===fetch_emp_by_level.data[0].teams_id:false:true))}}",
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": true,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Team",
+      "onOptionChange": "{{Get_Emp_By_TeamValue_2.run()}}",
+      "originalId": "team_id",
+      "selectOptions": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( fetchTeam.data.map(c => {\n\treturn {\n\t\tlabel: c.team_name,\n\t\tvalue: c.team_id\n\t}\n})))}}",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    }
+  },
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "searchKey": "",
+  "serverSidePaginationEnabled": true,
+  "showInlineEditingOptionDropdown": true,
+  "tableData": "{{filtering.filter_KPI(fetchkpiall.data)}}",
+  "textSize": "0.875rem",
+  "topRow": 8,
+  "totalRecordsCount": 0,
+  "type": "TABLE_WIDGET_V2",
+  "version": 2,
+  "verticalAlignment": "CENTER",
+  "widgetId": "scwtszgal7",
+  "widgetName": "Table1"
+}

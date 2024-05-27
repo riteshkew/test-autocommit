@@ -1,0 +1,3 @@
+select * from employee1 as e 
+inner join access_control as ac on e.emp_role = ac.id
+WHERE e.email = {{appsmith.store.user.email}}

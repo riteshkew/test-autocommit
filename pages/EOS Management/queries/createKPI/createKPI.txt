@@ -1,0 +1,18 @@
+INSERT INTO public.KPI
+(
+	KPI_type, 
+	KPI, 
+	Team_id, 
+	Emp_id, 
+	KPI_KR_ID, 
+	KPI_Obj_Id,
+	comp_id
+)
+VALUES ('{{Input_KPI_Type.selectedOptionValue}}', 
+				'{{Input_KPI.text}}', 
+				'{{get_team_by_okr.data[0].team}}', 
+				'{{Inp_Sel_Emp.selectedOptionValue}}', 
+				'{{Inp_Key_Res.selectedOptionValue}}', 
+				{{Input_Str_Obj.selectedOptionValue}},
+				{{appsmith.store.company}}
+			 )

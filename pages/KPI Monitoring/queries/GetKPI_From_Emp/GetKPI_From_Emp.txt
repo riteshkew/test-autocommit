@@ -1,0 +1,1 @@
+SELECT * FROM KPI WHERE emp_id = {{Select_Owner.selectedOptionValue}};

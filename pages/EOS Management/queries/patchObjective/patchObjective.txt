@@ -1,0 +1,4 @@
+UPDATE company_objective1
+  SET name = {{Inp_Obj_nameCopy.text}}
+  WHERE id = {{ Obj_List.triggeredItem.id }};
+

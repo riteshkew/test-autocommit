@@ -1,0 +1,1 @@
+insert into company_details(company_name) values({{Input4.text}})

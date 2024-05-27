@@ -1,0 +1,30 @@
+INSERT INTO public.KPI_Week_Task (KPI_ID, Emp_ID, Weeks, Week_Target, Week_Actual, OnTrack, YEAR, Quarter)
+VALUES
+  ({{Select_KPI.selectedOptionValue}}, '{{Select_Owner.selectedOptionValue}}', 'Week 1', NULL, NULL, NULL, {{Input_Year.selectedOptionValue}}, {{Quarter_Inp.selectedOptionValue}}),
+	
+	 ({{Select_KPI.selectedOptionValue}}, '{{Select_Owner.selectedOptionValue}}', 'Week 2', NULL, NULL, NULL, {{Input_Year.selectedOptionValue}}, {{Quarter_Inp.selectedOptionValue}}),
+	 
+   ({{Select_KPI.selectedOptionValue}}, '{{Select_Owner.selectedOptionValue}}', 'Week 3', NULL, NULL, NULL, {{Input_Year.selectedOptionValue}}, {{Quarter_Inp.selectedOptionValue}}),
+	 
+	  ({{Select_KPI.selectedOptionValue}}, '{{Select_Owner.selectedOptionValue}}', 'Week 4', NULL, NULL, NULL, {{Input_Year.selectedOptionValue}}, {{Quarter_Inp.selectedOptionValue}}),
+		
+		 ({{Select_KPI.selectedOptionValue}}, '{{Select_Owner.selectedOptionValue}}', 'Week 5', NULL, NULL, NULL, {{Input_Year.selectedOptionValue}}, {{Quarter_Inp.selectedOptionValue}}),
+		 
+		  ({{Select_KPI.selectedOptionValue}}, '{{Select_Owner.selectedOptionValue}}', 'Week 6', NULL, NULL, NULL, {{Input_Year.selectedOptionValue}}, {{Quarter_Inp.selectedOptionValue}}),
+			
+			 ({{Select_KPI.selectedOptionValue}}, '{{Select_Owner.selectedOptionValue}}', 'Week 7', NULL, NULL, NULL, {{Input_Year.selectedOptionValue}}, {{Quarter_Inp.selectedOptionValue}}),
+			 
+			  ({{Select_KPI.selectedOptionValue}}, '{{Select_Owner.selectedOptionValue}}', 'Week 8', NULL, NULL, NULL, {{Input_Year.selectedOptionValue}}, {{Quarter_Inp.selectedOptionValue}}),
+				
+				 ({{Select_KPI.selectedOptionValue}}, '{{Select_Owner.selectedOptionValue}}', 'Week 9', NULL, NULL, NULL, {{Input_Year.selectedOptionValue}}, {{Quarter_Inp.selectedOptionValue}}),
+				 
+				  ({{Select_KPI.selectedOptionValue}}, '{{Select_Owner.selectedOptionValue}}', 'Week 10', NULL, NULL, NULL, {{Input_Year.selectedOptionValue}}, {{Quarter_Inp.selectedOptionValue}}),
+					
+					 ({{Select_KPI.selectedOptionValue}}, '{{Select_Owner.selectedOptionValue}}', 'Week 11', NULL, NULL, NULL, {{Input_Year.selectedOptionValue}}, {{Quarter_Inp.selectedOptionValue}}),
+					 
+					  ({{Select_KPI.selectedOptionValue}}, '{{Select_Owner.selectedOptionValue}}', 'Week 12', NULL, NULL, NULL, {{Input_Year.selectedOptionValue}}, {{Quarter_Inp.selectedOptionValue}}),
+						
+						 ({{Select_KPI.selectedOptionValue}}, '{{Select_Owner.selectedOptionValue}}', 'Week 13', NULL, NULL, NULL, {{Input_Year.selectedOptionValue}}, {{Quarter_Inp.selectedOptionValue}});
+					
+  
+

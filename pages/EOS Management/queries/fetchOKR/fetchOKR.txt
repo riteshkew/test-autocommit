@@ -1,0 +1,2 @@
+SELECT * FROM OKR WHERE comp_id = {{appsmith.store.company}} ORDER by kr_id DESC;
+

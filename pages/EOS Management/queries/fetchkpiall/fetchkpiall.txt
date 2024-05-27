@@ -1,0 +1,3 @@
+ SELECT * FROM KPI WHERE comp_id = {{appsmith.store.company}}
+
+

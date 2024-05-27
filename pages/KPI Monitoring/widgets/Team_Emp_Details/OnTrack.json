@@ -1,0 +1,38 @@
+{
+  "animateLoading": true,
+  "borderRadius": "0px",
+  "bottomRow": 63,
+  "boxShadow": "none",
+  "counterClockWise": false,
+  "displayName": "Circular Progress",
+  "dynamicBindingPathList": [
+    {
+      "key": "progress"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "fillColor": "#002b41ff",
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.37671330.svg",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "1ldz856yqt",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 47,
+  "originalBottomRow": 63,
+  "originalTopRow": 49,
+  "parentColumnSpace": 17.9375,
+  "parentId": "iaoes65e9m",
+  "parentRowSpace": 10,
+  "progress": "{{Table1.selectedRow.ontrack}}",
+  "renderMode": "CANVAS",
+  "rightColumn": 63,
+  "shouldScroll": false,
+  "shouldTruncate": false,
+  "showResult": true,
+  "topRow": 49,
+  "type": "CIRCULAR_PROGRESS_WIDGET",
+  "version": 1,
+  "widgetId": "d218jkb6vu",
+  "widgetName": "OnTrack"
+}

@@ -1,0 +1,6 @@
+UPDATE Team AS tm
+SET Team_Name = {{Input1.text}}
+WHERE tm.team_id = {{List_Team.triggeredItem.team_id}}
+
+
+

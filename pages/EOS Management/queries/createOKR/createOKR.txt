@@ -1,0 +1,12 @@
+INSERT INTO public.OKR (Key_Result, Key_Result_Desc,Obj_Id,team,comp_id)
+VALUES (
+    '{{Inp_Key_Result.text}}',
+    '{{Inp_Key_Result_Desc.text}}',
+    {{Obj_List.selectedItem.id}},
+		'{{Team_Lead.selectedOptionValue}}',
+	'{{appsmith.store.company}}'
+)
+
+
+
+	

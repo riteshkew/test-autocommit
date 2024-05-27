@@ -1,0 +1,41 @@
+SELECT DISTINCT
+		ROUND(kwt.ontrack,2),
+    kpi.KPI_type,
+    kwt.KPI_ID,
+    kwt.Emp_ID,
+    kwt.Weeks,
+		km.KPI_Name, 
+		km.quarter,
+		kwt.Week_Actual,
+ 				CASE
+        WHEN kpi.KPI_type = 'CUMULATIVE' THEN km.Overall_Target/13
+        WHEN kpi.KPI_type = 'AVERAGE' THEN km.Overall_Target
+        WHEN kpi.KPI_type = 'SNAPSHOT' AND Weeks = 'Week 1' THEN km.Overall_Target*1
+				WHEN kpi.KPI_type = 'SNAPSHOT' AND Weeks = 'Week 2' THEN km.Overall_Target*2- km.start_value*1
+				WHEN kpi.KPI_type = 'SNAPSHOT' AND Weeks = 'Week 3' THEN km.Overall_Target*3- km.start_value*2
+				WHEN kpi.KPI_type = 'SNAPSHOT' AND Weeks = 'Week 4' THEN km.Overall_Target*4- km.start_value*3
+				WHEN kpi.KPI_type = 'SNAPSHOT' AND Weeks = 'Week 5' THEN km.Overall_Target*5- km.start_value*4
+				WHEN kpi.KPI_type = 'SNAPSHOT' AND Weeks = 'Week 6' THEN km.Overall_Target*6- km.start_value*5
+				WHEN kpi.KPI_type = 'SNAPSHOT' AND Weeks = 'Week 7' THEN km.Overall_Target*7- km.start_value*6
+				WHEN kpi.KPI_type = 'SNAPSHOT' AND Weeks = 'Week 8' THEN km.Overall_Target*8- km.start_value*7
+				WHEN kpi.KPI_type = 'SNAPSHOT' AND Weeks = 'Week 9' THEN km.Overall_Target*9- km.start_value*8
+				WHEN kpi.KPI_type = 'SNAPSHOT' AND Weeks = 'Week 10' THEN km.Overall_Target*10- km.start_value*9
+				WHEN kpi.KPI_type = 'SNAPSHOT' AND Weeks = 'Week 11' THEN km.Overall_Target*11- km.start_value*10
+				WHEN kpi.KPI_type = 'SNAPSHOT' AND Weeks = 'Week 12' THEN km.Overall_Target*12- km.start_value*11
+				WHEN kpi.KPI_type = 'SNAPSHOT' AND Weeks = 'Week 13' THEN km.Overall_Target*13- km.start_value*12
+        ELSE NULL
+    END AS Week_Target,
+		  
+		CAST(SUBSTRING(kwt.Weeks, 6) AS INTEGER) AS WeekNumber
+FROM
+    public.kpi_week_task AS kwt
+		INNER JOIN public.KPI AS kpi ON kwt.KPI_ID = kpi.KPI_id
+    INNER JOIN public.kpi_monitor AS km ON kwt.KPI_ID = km.KPI_id
+    
+WHERE
+   kwt.KPI_id = {{Table1.selectedRow.kpi_id}} AND  km.quarter = {{Table1.selectedRow.quarter}}
+	 
+ORDER BY
+    WeekNumber;
+		
+

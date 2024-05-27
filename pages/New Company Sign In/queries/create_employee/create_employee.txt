@@ -1,0 +1,5 @@
+insert into employee1 values({{Input1.text}},{{Input3.text}},
+														 (SELECT team_id from team where team_name ={{Input5.text}}),
+														 'admin',
+														 (SELECT company_id from company_details where company_name = {{Input4.text}}),
+															{{Input2.text}},'active')

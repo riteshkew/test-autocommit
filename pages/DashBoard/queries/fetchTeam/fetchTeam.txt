@@ -1,0 +1,1 @@
+SELECT * FROM Team  where comp_id = {{appsmith.store.company}};

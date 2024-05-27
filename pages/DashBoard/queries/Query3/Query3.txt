@@ -1,0 +1,19 @@
+SELECT
+(SELECT SUM(ontrack) AS Week1
+FROM public.kpi_week_task 
+WHERE weeks = 'Week 1'),
+(SELECT SUM(ontrack) AS Week2
+FROM public.kpi_week_task 
+WHERE weeks = 'Week 2'),
+(SELECT SUM(ontrack) AS Week3
+FROM public.kpi_week_task 
+WHERE weeks = 'Week 3'),
+(SELECT SUM(ontrack) AS Week3
+FROM public.kpi_week_task 
+WHERE weeks = 'Week 3'),
+(SELECT SUM(ontrack) AS Week4
+FROM public.kpi_week_task 
+WHERE weeks = 'Week 4'),
+
+;
+

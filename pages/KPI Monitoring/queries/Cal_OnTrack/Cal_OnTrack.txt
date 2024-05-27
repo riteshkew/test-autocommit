@@ -1,0 +1,8 @@
+UPDATE KPI_Monitor
+SET
+		OnTrack = (SELECT SUM(Week_Actual)/(SUM(Week_Target))  FROM public.kpi_week_task
+		Where Week_Actual IS NOT NULL)
+	
+WHERE
+		KPI_ID = {{Table1.selectedRow.kpi_id}}
+

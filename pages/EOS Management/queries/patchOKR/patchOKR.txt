@@ -1,0 +1,7 @@
+UPDATE OKR
+  SET 
+		Key_Result = {{Inp_Key_ResultCopy.text}},
+		Key_Result_Desc = {{Inp_Key_Result_DescCopy.text}},
+		team = {{edit_team.selectedOptionValue}}
+  WHERE 
+		kr_id = {{OKR_util.OKR.kr_id}};

@@ -1,0 +1,25 @@
+DELETE  FROM KPI_Week_Task 
+WHERE KPI_ID IN (
+    SELECT kwt.KPI_ID
+    FROM KPI_Week_Task AS kwt
+		INNER JOIN KPI_Monitor AS km ON kwt.KPI_ID = km.KPI_id
+    INNER JOIN KPI AS kpi ON kwt.KPI_ID = kpi.KPI_id
+    INNER JOIN OKR AS okr ON kpi.kpi_obj_id = okr.obj_id
+		INNER JOIN public.company_objective1 AS o ON o.id = okr.obj_id
+    WHERE o.id = {{Obj_List.triggeredItem.id}}
+);
+DELETE FROM KPI_Monitor
+WHERE KPI_ID IN (
+    SELECT km.KPI_ID
+    FROM KPI_Monitor AS km 
+    INNER JOIN KPI AS kpi ON km.KPI_ID = kpi.KPI_id
+    INNER JOIN OKR AS okr ON kpi.kpi_obj_id = okr.obj_id
+		INNER JOIN public.company_objective1 AS o ON o.id = okr.obj_id
+    WHERE o.id = {{Obj_List.triggeredItem.id}}
+);
+DELETE FROM KPI AS kpi
+WHERE kpi.kpi_obj_id  = {{Obj_List.triggeredItem.id}};
+DELETE FROM OKR AS okr
+WHERE okr.obj_id  = {{Obj_List.triggeredItem.id}};
+DELETE FROM company_objective1 AS co
+WHERE co.id  = {{Obj_List.triggeredItem.id}};

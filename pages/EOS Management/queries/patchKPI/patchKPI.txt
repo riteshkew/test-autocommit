@@ -1,0 +1,8 @@
+UPDATE KPI AS K
+SET
+		KPI = {{Table1.triggeredRow.kpi}},
+		KPI_type = {{Table1.triggeredRow.kpi_type}},
+		Team_id = {{fetchTeam.data.find(team => team.team_name === Table1.triggeredRow.team_id)?.team_id}},
+		Emp_id ={{fetchEmployee.data.find(emp => emp.emp_name=== Table1.triggeredRow.emp_id)?.emp_id}}
+WHERE
+    K.kpi_id = {{Table1.triggeredRow.kpi_id}};

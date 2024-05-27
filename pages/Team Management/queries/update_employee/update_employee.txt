@@ -1,0 +1,11 @@
+UPDATE Employee1 AS emp
+SET Emp_Name = {{Inp_Emp_NameCopy.text}},
+Emp_id  = {{Inp_Emp_idCopy.text}},
+Teams_id = {{Inp_teamCopy.selectedOptionValue}},
+emp_role = {{edit_emp_role.selectedOptionValue}},
+email={{edit_Input_Email.text}}
+
+WHERE emp.emp_id = {{OKR_ListCopy.triggeredItem.emp_id}}
+
+
+

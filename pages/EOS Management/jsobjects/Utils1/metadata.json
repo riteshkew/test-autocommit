@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "64abaf6c5b74fd62c2bf334e_64ad4c30fd2ee65af306b6ea",
+  "id": "EOS Management_Utils1",
+  "unpublishedCollection": {
+    "name": "Utils1",
+    "pageId": "EOS Management",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "objective",
+        "value": "{}"
+      }
+    ]
+  }
+}

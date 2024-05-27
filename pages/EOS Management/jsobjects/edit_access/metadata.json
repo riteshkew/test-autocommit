@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "64abaf6c5b74fd62c2bf334e_64cb2e03e117701db5e9eb83",
+  "id": "EOS Management_edit_access",
+  "unpublishedCollection": {
+    "name": "edit_access",
+    "pageId": "EOS Management",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

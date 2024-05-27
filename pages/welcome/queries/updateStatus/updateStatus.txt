@@ -1,0 +1,2 @@
+update employee1
+set status = 'active' where email = {{appsmith.store.user.email}}

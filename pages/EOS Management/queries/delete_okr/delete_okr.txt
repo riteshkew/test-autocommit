@@ -1,0 +1,20 @@
+
+
+DELETE FROM kpi_week_task
+WHERE kpi_id IN (
+  SELECT kpi_id
+  FROM kpi
+  WHERE kpi_kr_id = {{Okr_List.selectedItem.kr_id}}
+);
+
+DELETE FROM kpi_monitor
+WHERE kpi_id IN (
+  SELECT kpi_id
+  FROM kpi
+  WHERE kpi_kr_id = {{Okr_List.triggeredItem.kr_id}}
+);
+DELETE FROM KPI
+WHERE kpi_kr_id = {{Okr_List.triggeredItem.kr_id}};
+
+DELETE FROM okr
+WHERE kr_id = {{Okr_List.triggeredItem.kr_id}};

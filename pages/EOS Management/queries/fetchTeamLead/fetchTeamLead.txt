@@ -1,0 +1,1 @@
+SELECT team_name FROM team WHERE team_id = {{currentItem.team_lead}}

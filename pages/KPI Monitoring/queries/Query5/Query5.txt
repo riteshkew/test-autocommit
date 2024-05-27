@@ -1,0 +1,1 @@
+DELETE ALL FROM public.kpi_monitor WHERE kpi_id = {{Table1.selectedRow.kpi_id}} AND  Quarter = {{Table1.selectedRow.quarter}};

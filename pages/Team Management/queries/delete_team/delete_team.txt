@@ -1,0 +1,5 @@
+DELETE FROM Employee1 AS emp
+WHERE emp.teams_id = {{List_Team.triggeredItem.team_id}};
+DELETE FROM Team AS tm
+WHERE tm.team_id = {{List_Team.triggeredItem.team_id}};
+

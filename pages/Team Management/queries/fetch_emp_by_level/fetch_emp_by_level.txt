@@ -1,0 +1,6 @@
+select * from employee1 as e 
+inner join eos_user as eu 
+on e.emp_id = eu.emp_id
+inner join access_control as ac on e.emp_role = ac.id
+
+WHERE eu.user_email = {{appsmith.store.user.email}}

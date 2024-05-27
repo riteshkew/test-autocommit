@@ -1,0 +1,47 @@
+/*SELECT
+    c.KPI_ID AS Obj_KPI_ID,
+		c.KPI_Type as Obj_KPI_Type,
+    c.KPI_Name AS Obj_KPI_Name,
+    c.OKR AS Obj_KeyResult,
+    c.Company_Objective AS Strategic_Objective,
+		c.Emp_id aS Employee_id,
+    c.Year AS Obj_Year,
+		c.Quarter AS Obj_Quarter,
+		c.Start_Value as Obj_Start_Value,
+    c.Overall_Target AS Obj_Overall_Target,
+    c.Overall_Actual AS Obj_Overall_Actual,
+    c.Progress AS Obj_Progress,
+		c.OnTrack aS Obj_OnTrack,
+
+    cs.name AS subject_name,
+    ct.name AS type_name,
+    cl.name AS level_name
+FROM
+    public.KPI_Monitor AS c
+    JOIN public.course_subject AS cs ON c.course_subject_id = cs.id
+    JOIN public.course_type AS ct ON c.course_type_id = ct.id
+    JOIN public.course_level AS cl ON c.course_level_id = cl.id
+		WHERE cs.id =
+		okr.KR_ID,
+    okr.Obj_id,
+		kpi.KPI_KR_ID,
+    kpi.KPI_Obj_Id,
+		 co1.id,
+		*/
+
+	SELECT
+    kpi.KPI_type,
+    kpi.KPI_id,
+    okr.Key_Result,
+    co1.name AS Objective,
+
+    (SELECT SUM(Week_Actual) FROM public.kpi_week_task) AS Overall_Actual,
+		km.KPI_Name,
+		km.Start_Value,
+		(SELECT SUM(Week_Actual) FROM public.kpi_week_task)	 AS OnTrack , 
+		km.Progress , km.Overall_Target, km.Year, km.Quarter AS Quarter
+FROM
+    public.KPI_Monitor AS km
+    INNER JOIN public.KPI AS kpi ON km.KPI_ID = kpi.KPI_id
+    INNER JOIN public.OKR AS okr ON kpi.KPI_KR_ID = okr.KR_ID AND kpi.KPI_Obj_Id = okr.Obj_Id
+    INNER JOIN public.Company_Objective1 AS co1 ON kpi.KPI_Obj_Id = co1.id

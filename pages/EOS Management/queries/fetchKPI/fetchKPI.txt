@@ -1,0 +1,2 @@
+SELECT * FROM KPI WHERE KPI_KR_ID = {{Okr_List.selectedItem.kr_id}} AND comp_id = {{appsmith.store.company}};
+

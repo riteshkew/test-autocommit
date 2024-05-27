@@ -1,0 +1,8 @@
+INSERT INTO public.team (Email)
+VALUES (
+    '{{Input_TeamName.text}}',
+    {{Input_TeamName.text.slice(0,3) + "_"+Math.floor(Math.random() * 1000)}},
+		'{{appsmith.store.company}}'
+);
+
+

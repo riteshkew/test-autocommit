@@ -1,0 +1,1 @@
+insert into eos_user(user_name,user_email,emp_id,comp_id) VALUES({{OKR_ListCopy.triggeredItem.emp_name}},{{OKR_ListCopy.triggeredItem.email}},{{OKR_ListCopy.triggeredItem.emp_id}},{{appsmith.store.company}})

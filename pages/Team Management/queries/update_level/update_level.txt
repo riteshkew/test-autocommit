@@ -1,0 +1,6 @@
+update access_control
+set lvl_id = {{team_lead_lvl.selectedOptionValue}}
+where id = 'teamlead';
+update access_control
+set lvl_id = {{team_member_lvl.selectedOptionValue}}
+where id = 'teammember';

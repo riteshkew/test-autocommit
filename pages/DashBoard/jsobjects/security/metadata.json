@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "64abaf6c5b74fd62c2bf334e_64dcb47fab6cfd6f5d1163a7",
+  "id": "DashBoard_security",
+  "unpublishedCollection": {
+    "name": "security",
+    "pageId": "DashBoard",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

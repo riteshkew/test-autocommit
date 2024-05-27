@@ -1,0 +1,7 @@
+DELETE FROM KPI_Week_Task
+WHERE KPI_ID = {{Table1.triggeredRow.kpi_id}};
+DELETE FROM KPI_Monitor
+WHERE KPI_ID = {{Table1.triggeredRow.kpi_id}};
+DELETE FROM KPI
+WHERE kpi_id = {{Table1.triggeredRow.kpi_id}};
+

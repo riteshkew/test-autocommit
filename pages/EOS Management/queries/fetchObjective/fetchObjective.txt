@@ -1,0 +1,1 @@
+SELECT * FROM public.company_objective1 WHERE comp_id = {{appsmith.store.company}} ORDER BY created DESC;

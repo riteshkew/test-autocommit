@@ -1,0 +1,3 @@
+UPDATE employee1
+SET status = 'invited'
+WHERE emp_id = {{OKR_ListCopy.triggeredItem.emp_id}}

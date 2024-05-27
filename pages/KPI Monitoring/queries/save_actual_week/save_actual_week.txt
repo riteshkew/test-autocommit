@@ -1,0 +1,6 @@
+UPDATE kpi_week_task
+SET
+		Week_Actual = {{Table2.triggeredRow.week_actual}}
+		
+WHERE
+		Weeks = {{Table2.triggeredRow.weeks}} AND KPI_ID = {{Table2.triggeredRow.kpi_id}} ;

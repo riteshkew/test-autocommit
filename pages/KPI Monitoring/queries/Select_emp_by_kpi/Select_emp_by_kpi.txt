@@ -1,0 +1,3 @@
+SELECT emp_id
+FROM public.kpi
+WHERE kpi_id = {{Select_KPI.selectedOptionValue}};
